@@ -1,10 +1,14 @@
 {
-  "date": "2016-11-27",
-  "venue": "Austin 360 Amphitheatre",
-  "venue_address": "9201 Circuit of the Americas Blvd, Del Valle, TX 78617",
-  "bands": [
-    "Of Mice and Men",
-    "Marilyn Manson",
-    "Slipknot"
+  "concerts": [
+    {
+      "date": "2016-11-27",
+      "venue": "Austin 360 Amphitheatre",
+      "venue_address": "9201 Circuit of the Americas Blvd, Del Valle, TX 78617",
+      "bands": [
+        "Of Mice and Men",
+        "Marilyn Manson",
+        "Slipknot"
+      ]
+    }
   ]
 }

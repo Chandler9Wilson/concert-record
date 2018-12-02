@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "title": "concert-record",
+  "type": "object",
+  "properties": {
+    "concerts": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/concert"
+      }
+    }
+  },
+  "definitions": {
+    "concert": {
+      "type": "object",
+      "required": [
+        "date",
+        "venue",
+        "venue_address",
+        "bands"
+      ],
+      "properties": {
+        "date": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "venue": {
+          "type": "string",
+          "description": "Name of the venue at time of attendance"
+        },
+        "venue_address": {
+          "type": "string",
+          "description": "Address of the venue for a more permanent reference"
+        },
+        "bands": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "description": "Names of the bands in order of appearence if possible (opening first)"
+          }
+        }
+      }
+    }
+  }
+}
